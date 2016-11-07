@@ -16,4 +16,3 @@ end
 source_url 'https://github.com/chef-cookbooks/users'
 issues_url 'https://github.com/chef-cookbooks/users/issues'
 
-chef_version '>= 12.1'
