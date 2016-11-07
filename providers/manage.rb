@@ -17,6 +17,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+require 'fileutils'
 
 use_inline_resources
 
@@ -30,6 +31,7 @@ action :remove do
       action :remove
       force rm_user['force'] ||= false
     end
+    FileUtils.rm_rf rm_user['home']
   end
 end
 
